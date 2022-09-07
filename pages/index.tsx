@@ -85,6 +85,7 @@ const Home: NextPage<IResults> = ({ searchResults, ...props }) => {
               <div className="flex justify-between items-center">
                 <input
                   id="search"
+                  name="search"
                   value={searchTerm}
                   onChange={(e) => setSearchTerm(e.target.value)}
                   className="block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
