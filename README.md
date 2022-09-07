@@ -33,6 +33,12 @@ To complete the assessment:
 1. Use the data from Brewery DB API to fill the table.
 2. A link to [mockup](https://www.figma.com/file/zHsVw2RQbNGY9WhdkDp3Gc/A-frontend-assignment-design?node-id=0%3A1) 
 
+**Nice to have**:
+1. Clean code
+2. React + TypeScript best practices
+3. Relevant design patterns
+4. Optional: Tests (unit, e2e)
+
 ## Getting Started
 First, run the development server: 
 
