@@ -1,13 +1,13 @@
 # Welcome to the Autofill frontend assignment!
 
 Congratulations on coming so far!  We are excited about you, and we hope you are too ;) 
-The assignment allows Autofill to evaluate your technical skills as a  front-end developer. 
+The assignment allows Autofill to evaluate your technical skills as a front-end developer. 
 
 To complete the assessment:
 
 - create a branch using the name format [your-name]-brewery-assessment
 - complete the tasks listed below
-- Inform us by email when you accomplish the assignment, and we will schedule a technical interview as the next step after the assignment.
+- When you accomplish the assignment, inform Ilsa by [email](ilse@autofilltech.com). We will schedule a technical interview after the assignment.
 - 
 
 ## Notes
@@ -26,8 +26,7 @@ To complete the assessment:
 
 **Technical Specification**:
 1. Use the data from Brewery DB API to fill the table. 
-2. 
-
+2. A link to [mockup](https://www.figma.com/file/zHsVw2RQbNGY9WhdkDp3Gc/A-frontend-assignment-design?node-id=0%3A1)
 
 
 ## Getting Started 

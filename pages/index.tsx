@@ -32,9 +32,8 @@ const Home: NextPage<IResults> = ({ searchResults, ...props }) => {
     useState<ISearchBreweryData[]>(searchResults);
   const [searchTerm, setSearchTerm] = useState<string>("");
 
-  
   useEffect(() => {
-    let response:Response
+    let response: Response;
     async function fetchData(searchTerm: string) {
       if (searchTerm !== "") {
         response = await fetch(
@@ -58,7 +57,7 @@ const Home: NextPage<IResults> = ({ searchResults, ...props }) => {
       setSearchResult(searchResults);
     }
     fetchData(searchTerm);
-  }, [ searchTerm]);
+  }, [searchTerm]);
 
   return (
     <div className={styles.container}>
@@ -77,16 +76,29 @@ const Home: NextPage<IResults> = ({ searchResults, ...props }) => {
             }}
           >
             <fieldset>
-              <legend>Search</legend>
-              <input
-                id="search"
-                value={searchTerm}
-                onChange={(e) => setSearchTerm(e.target.value)}
-              />
-              <button type="submit">Search</button>
+              <label
+                htmlFor="search"
+                className="block text-sm font-medium text-gray-700"
+              >
+                Search
+              </label>
+              <div className="flex justify-between items-center">
+                <input
+                  id="search"
+                  value={searchTerm}
+                  onChange={(e) => setSearchTerm(e.target.value)}
+                  className="block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
+                />
+                <button
+                  type="submit"
+                  className="inline-flex items-center rounded border border-transparent bg-indigo-600 px-2.5 py-1.5 text-xs font-medium text-white shadow-sm hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"
+                >
+                  Search
+                </button>
+              </div>
             </fieldset>
           </form>
-          <section>
+          <section className="pt-4">
             {hasResults ? (
               <div>
                 {sResult.map((result, idx) => {
