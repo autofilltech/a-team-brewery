@@ -7,7 +7,7 @@ The assignment allows Autofill to evaluate your technical skills as a front-end 
 To complete the assessment: 
 - Create a branch using the name format [your-name]-brewery-assessment
 - Complete the tasks listed below
-- When you accomplish the assignment, inform Ilsa by [email](ilse@autofilltech.com). We will schedule a technical interview after the assignment.
+- When you accomplish the assignment, inform Ilsa by [email](mailto:ilse@autofilltech.com). We will schedule a technical interview after the assignment.
 
 
 ## Notes
