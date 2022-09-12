@@ -18,7 +18,7 @@ To complete the assessment:
 - To protect your privacy, we will delete the branch after a day or two after the interview.
 - For the design, use your framework of choice (bootstrap, tailwinds, etc..)
 - If something is not clear, feel free to ask questions
--  **Don't clone or fork the repo**
+-  **Don't fork the repo**
 
 ## Assignment
 
