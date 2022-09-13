@@ -6,7 +6,7 @@ type AllBreweries = {
 }
 
 const TableResults = ({ breweries }: AllBreweries) => {
-
+ 
 return (
   
   <table className='w-full text-left text-xs border border-gray-300 shadow-sm pl-32'>
