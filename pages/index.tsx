@@ -8,6 +8,8 @@ const Home = () => {
   const [searchTerm, setSearchTerm] = useState<string>("")
   const searchRef = useRef<HTMLInputElement>(null)
 
+  // We update the searchterm value as user submits form
+  // Then the searchterm value is passed on to the Table component to be used in the API query
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault()
     setSearchTerm(searchRef.current?.value || " ")
