@@ -8,6 +8,7 @@ type AllBreweries = {
 const TableResults = ({ breweries }: AllBreweries) => {
 
 return (
+  
   <table className='w-full text-left text-xs border border-gray-300 shadow-sm pl-32'>
     <tbody className='text-black w-full'>
       <tr className=' border border-gray-200 uppercase'>

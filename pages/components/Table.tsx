@@ -27,10 +27,9 @@ const Table = ({ searchTerm }:SearchTerm) => {
 
   return (
     <>
- 
-
-    <TableResults breweries={breweries}/>
-
+    {breweries ? (<TableResults breweries={breweries}/>):("something")}
+    
+    {/* {Pagination} */}
     </>
   )
 }
