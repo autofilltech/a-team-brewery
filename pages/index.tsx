@@ -32,10 +32,10 @@ const Home = () => {
           </form>
         </div>
     </header>
-    <div className='border-b border-gray-200 mb-8 relative block w-full h-[1px]'></div>
+    <div className='border-b border-gray-200 mb-8 mt-4 relative block w-full h-[1px]'></div>
 
     <section className='w-full h-fit relative justify-center mb-32'>
-       <Table searchTerm={searchTerm}/>
+      {searchTerm.length > 1 ?( <Table searchTerm={searchTerm}/>):("")}
     </section>
     
 
