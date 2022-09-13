@@ -25,14 +25,18 @@ const Home = () => {
               <h1 className="text-6xl font-semibold text-black text-center">A-Team Brewery DB</h1>
               <div className='flex w-full m-0 flex-row py-4 justify-between items-center '>
           <h2 className='font-bold text-black'>Brewery List</h2>
-
           <form className='w-[30%] border flex flex-row border-gray-200 rounded-md pr-3'onSubmit={handleSubmit}>
             <MagnifyingGlassIcon className='h-4 w-4 m-2  text-gray-400' />
             <input type="text" placeholder='Search brewery by name' className='text-xs outline-none border-none w-full' ref={searchRef} />
           </form>
         </div>
     </header>
-    <Table />
+    <div className='border-b border-gray-200 mb-8 relative block w-full h-[1px]'></div>
+
+    <section className='w-full h-fit relative justify-center mb-32'>
+       <Table searchTerm={searchTerm}/>
+    </section>
+    
 
     </div>
   );
