@@ -68,7 +68,7 @@ const Home: NextPage<IResults> = ({ searchResults, ...props }) => {
       </Head>
 
       <main className={styles.main}>
-        <h1 className={styles.title}>Welcome to A-Team Brewery</h1>
+        <h1 className={styles.title}>Helloooooo test test</h1>
         <>
           <form
             onSubmit={(e) => {
