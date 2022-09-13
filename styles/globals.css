@@ -8,6 +8,7 @@
   @apply bg-gray-100;
   }
 
-
-
+  th, td, tr {
+    @apply p-[2%];
+  }
 }
