@@ -1,6 +1,6 @@
 import type { GetServerSideProps, NextPage } from "next";
 import Head from "next/head";
-import React, { useRef, useState, useEffect } from "react"
+import React, { useRef, useState} from "react"
 import {MagnifyingGlassIcon} from '@heroicons/react/24/solid'
 import Table from "./components/Table";
 
