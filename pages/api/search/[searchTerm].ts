@@ -1,9 +1,9 @@
 import type { NextApiRequest, NextApiResponse } from 'next'
 import { BreweryDBService } from '../../../lib/http/BreweryDBService';
-import { ISearchBreweryData } from '../../../lib/search/types';
+import { BrewsData } from '../../../lib/search/types';
 let breweryDBService!: BreweryDBService;
 
-export type IApiSearchResponseData = ISearchBreweryData[];
+export type IApiSearchResponseData = BrewsData[];
 export default function userHandler(req: NextApiRequest,
     res: NextApiResponse<IApiSearchResponseData>) {
     const {

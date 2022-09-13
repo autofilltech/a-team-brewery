@@ -1,13 +1,13 @@
 import type { NextApiRequest, NextApiResponse } from 'next';
 import { BreweryDBService } from '../../../lib/http/BreweryDBService'
-import { ISearchBreweryData } from '../../../lib/search/types';
+import { BrewsData } from '../../../lib/search/types';
 
 
 interface IApiSearchRequest extends NextApiRequest {
     body: { searchTerm?: string };
 }
 
-export type IApiSearchResponseData = ISearchBreweryData[];
+export type IApiSearchResponseData = BrewsData[];
 
 let breweryDBService!: BreweryDBService;
 
