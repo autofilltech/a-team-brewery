@@ -1,7 +1,13 @@
 import React from 'react'
+import { BrewsData } from '../../lib/search/types';
 
-const TableResults = () => (
+type AllBreweries = {
+  breweries: BrewsData[];
+}
 
+const TableResults = ({ breweries }: AllBreweries) => {
+
+return (
   <table className='w-full text-left text-xs border border-gray-300 shadow-sm pl-32'>
     <tbody className='text-black w-full'>
       <tr className=' border border-gray-200 uppercase'>
@@ -11,15 +17,23 @@ const TableResults = () => (
         <th>Street</th>
         <th>-</th>
       </tr>
-      <tr>
-        <td>Name</td>
-        <td>Sao Paulo</td>
-        <td>Country</td>
-        <td>Street</td>
-        <td>-</td>
-      </tr>
+      {breweries.map((brews, i) => {
+        return (
+          <>
+            <tr key={i}>
+              <td>{brews.name}</td>
+              <td>{brews.city}</td>
+              <td>{brews.country}</td>
+              <td>{brews.street}</td>
+              <td>-</td>
+            </tr>
+          </>
+        )
+      })}
+
     </tbody>
   </table>
 )
+    }
 
 export default TableResults

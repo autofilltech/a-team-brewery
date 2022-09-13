@@ -15,7 +15,6 @@ const Home = () => {
     setSearchTerm(searchRef.current?.value || " ")
   }
 
-
   return (
     <div className="w-[70%] flex flex-col m-auto">
       <Head>
