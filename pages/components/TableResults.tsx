@@ -16,17 +16,17 @@ return (
         <th>City</th>
         <th>Country</th>
         <th>Street</th>
-        <th>-</th>
+        <th className='text-white'>Details</th>
       </tr>
       {breweries.map((brews, i) => {
         return (
           <>
-            <tr key={i}>
+            <tr key={i} className="hover">
               <td>{brews.name}</td>
               <td>{brews.city}</td>
               <td>{brews.country}</td>
               <td>{brews.street}</td>
-              <td>-</td>
+              <td className='text-blue-400'>Details</td>
             </tr>
           </>
         )

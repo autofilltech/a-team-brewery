@@ -8,6 +8,10 @@
   @apply bg-gray-100;
   }
 
+  .hover{
+    @apply hover:bg-blue-300 cursor-pointer
+  }
+
   th, td, tr {
     @apply p-[2%];
   }
